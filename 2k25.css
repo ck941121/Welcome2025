@@ -1,0 +1,46 @@
+body{ background: linear-gradient(to bottom, #030332, #681c05);  
+    overflow:clip;  
+    height:100vh;  
+    display:flex;  
+    justify-content:center;  
+    align-items:center;  
+  }  
+  canvas{  
+    position:fixed;  
+    inset:0;  
+    z-index:1;  
+    filter:blur(1px)  
+  }  
+  h1{    
+    font-family: "Rowdies", sans-serif;  
+    font-weight: 700;  
+    color:#ffaa;  
+    font-size:30vw;  
+    margin:auto;  
+    opacity:.8;  
+    pointer-events:none;  
+    user-select: none;  
+    position:relative;  
+    z-index:2;  
+    animation: textShadowRotate 5s infinite linear;  
+        
+      
+  }  
+      @keyframes textShadowRotate {  
+        0% {  
+          text-shadow: 5px 5px 20px rgb(255, 100, 100), -5px -5px 10px rgb(0, 255, 0);  
+        }  
+        25% {  
+          text-shadow: 5px -5px 10px rgb(0, 255, 255), -5px 5px 20px rgb(255, 100, 255);  
+        }  
+        50% {  
+          text-shadow: -5px -5px 20px rgb(0, 0, 255), 5px 5px 10px rgb(255, 255, 0);  
+        }  
+        75% {  
+          text-shadow: -5px 5px 10px rgb(255, 0, 255), 5px -5px 20px rgb(0, 255, 255);  
+        }  
+        100% {  
+          text-shadow: 5px 5px 20px rgb(255, 100, 100), -5px -5px 10px rgb(0, 255, 0);  
+        }  
+      }
+  
